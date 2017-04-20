@@ -2,7 +2,7 @@
   "private": true,
   "config": {
     "s3_bucket": "moose.texastribune.org",
-    "slug": "test-flow-chart"
+    "slug": "pinalien"
   },
   "devDependencies": {
     "browser-sync": "^2.0.0-rc10",

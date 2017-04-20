@@ -10,14 +10,6 @@
     },
     {
       "id": "story",
-      "text_md": "<p>What do you want to tell the world?</p>\n",
-      "a_option_md": "<p>I know!</p>\n",
-      "b_option_md": "<p>I’m not sure</p>\n",
-      "a_next": "A1",
-      "b_next": "B1"
-    },
-    {
-      "id": "A1",
       "text_md": "<p>How do you want to tell your story?</p>\n",
       "a_option_md": "<p>Video</p>\n",
       "b_option_md": "<p>Drawing</p>\n",
@@ -68,7 +60,7 @@
       "text_md": "<p>What kind of story is yours?</p>\n",
       "a_option_md": "<p>Next</p>\n",
       "a_next": "when",
-      "video": "//giphy.com/embed/DYH297XiCS2Ck?html5=true"
+      "video": "//giphy.com/embed/5UfsOgBaXNQgE?html5=true"
     },
     {
       "id": "when",
@@ -88,7 +80,8 @@
       "id": "why",
       "text_md": "<p>Why do you want to tell the world this story? </p>\n",
       "a_option_md": "<p>Next</p>\n",
-      "a_next": "after_feeling"
+      "a_next": "after_feeling",
+      "video": "//giphy.com/embed/DYH297XiCS2Ck?html5=true"
     },
     {
       "id": "after_feeling",
@@ -99,7 +92,7 @@
     },
     {
       "id": "done",
-      "text_md": "<p>Thanks for sharing your story.</p>\n"
+      "text_md": "<p>Thanks for sharing your story!</p>\n"
     }
   ]
 }
