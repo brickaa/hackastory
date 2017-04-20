@@ -1,22 +1,14 @@
-# News Apps Quiz Kit
+### Quickstart
 
-The News Apps Quiz Kit is a boilerplate for embeddable quizes. It was built for the Texas Tribune's [News Apps](https://twitter.com/newsapps) team, but could easily be altered to cater to other organization's/individual's needs. It is powered by the [News Apps Graphic Kit](https://github.com/texastribune/newsapps-graphic-kit).
-
-### [Sample Spreadsheet](https://docs.google.com/a/texastribune.org/spreadsheets/d/1juRPGh4ZTUEpcJFZj7fq4kuNdteLUap1db0DPKTlUE0/edit?usp=sharing) Template
-
-| question                                           | type | answer | a     | b     | c     | d    | incorrect_response_md     | correct_response_md |
-|----------------------------------------------------|------|--------|-------|-------|-------|------|------------------------|------------------|
-| The Tribune has an amazing news apps team.         | TF   | TRUE   |       |       |       |      | Go home, you're drunk. | Thank you!       |
-| Which news apps member has the coolest cat poster? | MULT | A      | Becca | Jolie | Annie | Ryan | :{ #sadmustache        | Good job.        |
-| Who plays in a fake band with "the ladies"?        | MULT | d      | Becca | Jolie | Annie | Ryan | :{ #sadmustache        | Good job.        |
-| Who is most likely to be eaten by a dinosaur?      | MULT | B      | Becca | Jolie | Annie | Ryan | :{ #sadmustache        | Good job.        |
-| Who tells secrets to their cat?                    | MULT | c      | Becca | Jolie | Annie | Ryan | :{ #sadmustache        | Good job.        |
-
-Each row represents a question. Under type, indicate whether the question is true/false (TF) or multiple choice (MULT). For TF questions, just write "true" or "false" in the answer columns, and leave the multiple choice answer columns blank. For MULT questions, fill in each of the multiple choice answers, and then indicate which is correct in the answer column. (The template will accept capital or lowercase letters A/a, B/b, C/c or D/d.)
+1. Download the project folder or clone the repo.
+2. `npm install`
+3. Authorize your computer if this is your first time to ever use the kit: `npm run spreadsheet/authorize`
+4. Add your Google sheet's ID to the `config.json`, and override any sheets that need to be processed differently. (`keyvalue` or `objectlist`)
+5. Get to work!
 
 ### Flow Charts
 
-Flow charts are a little bit different than a regular quiz. You'll need to give each question an ID, and indicate which ID (i.e. question) to show next for each option. Switch to the "flow-chart" branch and clone THAT repo (the styles, script &amp; index.html are a bit different). Here's a flow-chart [spreadsheet template](https://docs.google.com/spreadsheets/d/1zcnH7kQNqYA7a9DM6gRivG7HZu9fUab4nGLmRqJY3Ls/edit#gid=0):
+You'll need to give each question an ID, and indicate which ID (i.e. question) to show next for each option. Switch to the "flow-chart" branch and clone THAT repo (the styles, script &amp; index.html are a bit different). Here's a flow-chart [spreadsheet template](https://docs.google.com/spreadsheets/d/1zcnH7kQNqYA7a9DM6gRivG7HZu9fUab4nGLmRqJY3Ls/edit#gid=0):
 
 | id    | text_md                                                                                                                                                             | a_option_md                        | b_option_md              | a_next | b_next | img       |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|--------------------------|--------|--------|-----------|
@@ -41,14 +33,6 @@ Flow charts are a little bit different than a regular quiz. You'll need to give 
 - Image compression with [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin)
 - Asset revisioning with [gulp-rev](https://github.com/sindresorhus/gulp-rev) and [gulp-rev-replace](https://github.com/jamesknelson/gulp-rev-replace)
 - [pym.js](http://blog.apps.npr.org/pym.js/) included by default for easy embedding in hostile CMS environments
-
-### Quickstart
-
-1. Download the project folder or clone the repo.
-2. `npm install`
-3. Authorize your computer if this is your first time to ever use the kit: `npm run spreadsheet/authorize`
-4. Add your Google sheet's ID to the `config.json`, and override any sheets that need to be processed differently. (`keyvalue` or `objectlist`)
-5. Get to work!
 
 ### Connect to S3
 
