@@ -4,7 +4,7 @@
 2. `npm install`
 3. Authorize your computer if this is your first time to ever use the kit: `npm run spreadsheet/authorize`
 4. Add your Google sheet's ID to the `config.json`, and override any sheets that need to be processed differently. (`keyvalue` or `objectlist`)
-5. Get to work!
+5. Get to work! `gulp serve` to view locally
 
 ### Flow Charts
 
