@@ -2,54 +2,51 @@
   "Quiz": [
     {
       "id": "start",
-      "text_md": "<p>Are you a cat or dog person?</p>\n",
-      "a_option_md": "<p>Cat</p>\n",
-      "b_option_md": "<p>Dog</p>\n",
-      "a_next": "cat",
-      "b_next": "dog"
+      "text_md": "<p>What do you want to tell the world?</p>\n",
+      "a_option_md": "<p>I know!</p>\n",
+      "b_option_md": "<p>I’m not sure</p>\n",
+      "a_next": "A1",
+      "b_next": "B1"
     },
     {
-      "id": "cat",
-      "text_md": "<p>Do you tell secrets to your cat?</p>\n",
-      "a_option_md": "<p>Yes! She’s the best secret-keeper.</p>\n",
-      "b_option_md": "<p>No, I have real friends.</p>\n",
-      "a_next": "annie",
-      "b_next": "becca"
+      "id": "A1",
+      "text_md": "<p>Pellentesque ut neque.</p>\n",
+      "a_option_md": "<p>Yes</p>\n",
+      "b_option_md": "<p>No</p>\n",
+      "a_next": "A2",
+      "b_next": "B2"
     },
     {
-      "id": "dog",
-      "text_md": "<p>Would you rather have a <a href=\"http://qz.com/404056/a-team-of-scientists-have-engineered-a-chicken-with-a-dinosaurs-face-to-study-evolution/\">chickenosaurus</a> or a corgi?</p>\n",
-      "a_option_md": "<p>Chickenosaurus</p>\n",
-      "b_option_md": "<p>Corgi</p>\n",
-      "a_next": "jolie",
-      "b_next": "ryan"
+      "id": "B1",
+      "text_md": "<p>Praesent egestas tristique nibh.</p>\n",
+      "a_option_md": "<p>Yes</p>\n",
+      "b_option_md": "<p>No</p>\n",
+      "a_next": "A3",
+      "b_next": "B3"
     },
     {
-      "id": "annie",
-      "text_md": "<p>You’re Annie Daniel!</p>\n",
-      "img": "annie.jpg"
+      "id": "A2",
+      "text_md": "<p>Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.</p>\n",
+      "a_option_md": "<p>Yes</p>\n",
+      "b_option_md": "<p>No</p>\n"
     },
     {
-      "id": "becca",
-      "text_md": "<p>You’re Becca Aaronson!</p>\n",
-      "img": "becca.jpg"
+      "id": "A3",
+      "text_md": "<p>Ut leo.</p>\n",
+      "a_option_md": "<p>Yes</p>\n",
+      "b_option_md": "<p>No</p>\n"
     },
     {
-      "id": "jolie",
-      "text_md": "<p>You’re Jolie McCullough!</p>\n",
-      "img": "jolie.jpg"
+      "id": "B2",
+      "text_md": "<p>Cras varius.</p>\n",
+      "a_option_md": "<p>Yes</p>\n",
+      "b_option_md": "<p>No</p>\n"
     },
     {
-      "id": "ryan",
-      "text_md": "<p>You’re Ryan Murphy!</p>\n",
-      "img": "ryan.jpg"
-    }
-  ],
-  "META": [
-    {
-      "quiz_title": "Which news apps team member are you?",
-      "quiz_intro_md": "<p>This is an example of a quiz made with the News Apps <a href=\"https://github.com/texastribune/newsapps-quiz-kit\">Quiz Kit</a>. Send feedback to <a href=\"mailto:newsapps@texastribune.org\">newsapps@texastribune.org</a>.</p>\n",
-      "credit": "Becca Aaronson"
+      "id": "B3",
+      "text_md": "<p>Ut varius tincidunt libero.</p>\n",
+      "a_option_md": "<p>Yes</p>\n",
+      "b_option_md": "<p>No</p>\n"
     }
   ]
 }

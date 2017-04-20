@@ -2,13 +2,11 @@ $sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: Georgia, "Times New Roman", Times, serif;
 
 body {
-  color: $bodytext-black;
   font-family: $sans-serif;
   line-height: 1.4;
 }
 
 a {
-  color: $href-teal;
   text-decoration: none;
 
   &:hover {
@@ -31,7 +29,6 @@ a {
   margin: 0 0 .625em; // 10px
 
   p {
-    color: lighten($bodytext-black, 25%);
     font-family: $serif;
     font-size: .875em; // 14px
     line-height: 1.4;
@@ -44,7 +41,6 @@ a {
 }
 
 .graphic {
-  @include clearfix;
   margin: 0 0 1.875em; // 30px
 }
 
@@ -60,8 +56,6 @@ a {
 }
 
 .footer {
-  @include clearfix;
-  color: lighten($bodytext-black, 45%);
   font-size: .75em; // 12px
 
   ul {

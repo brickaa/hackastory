@@ -9,8 +9,7 @@
   }
 
   .option {
-    @include span-columns(6);
-    @include omega();
+    width: 50%;
     text-align: center;
     margin: 0 auto;
 
@@ -23,10 +22,6 @@
       padding-right: .5em;
       vertical-align: middle;
     }
-  }
-
-  .options {
-    @include clearfix;
   }
 
   .option,
@@ -53,13 +48,10 @@
   }
 
   .flow-question {
-    border-top: 1px solid $tribune-yellow;
     display: none;
     margin-bottom: 1.2em;
 
     header p {
-      @extend %font-l;
-      font-family: $base-sans-serif;
       font-weight: 300;
       margin-top: 1em;
       text-align: center;
@@ -77,9 +69,7 @@
   }
 
   .response {
-    background-color: $white;
     border: 0;
-    color: $tribune-teal;
     font-size: 2em;
     margin-bottom: 1em;
   }
