@@ -6,27 +6,43 @@
 
   {% for question in Quiz %}
   <article id="{{ question.id }}" class="flow-question">
-    <header>
+    {% if question.text_md %}
+    <header class="question">
       {{ question.text_md }}
     </header>
-    <section class="options">
+    {% endif %}
+    <section class="response">
+      {% if question.video %}
+      <iframe class="video" src="{{ question.video }}" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      {% endif %}
+
+      {% if question.image %}
+      <img class="image" src="{{ question.image }}" alt="">
+      {% endif %}
+
       {% if question.a_option_md %}
       <label class="option" data-link="{{ question.a_next }}">
-        <button class="response"><i class="fa fa-circle-thin"></i><i class="fa fa-check-circle"></i></button>
+        <button class="response--button"><i class="fa fa-circle-thin"></i><i class="fa fa-check-circle"></i></button>
         {{ question.a_option_md }}
       </label>
       {% endif %}
+
       {% if question.b_option_md %}
       <label class="option" data-link="{{ question.b_next }}">
-        <button class="response"><i class="fa fa-circle-thin"></i><i class="fa fa-check-circle"></i></button>
+        <button class="response--button"><i class="fa fa-circle-thin"></i><i class="fa fa-check-circle"></i></button>
         {{ question.b_option_md }}
       </label>
-    {% endif %}
-    {% if question.img %}
-    <figure class="image">
-      <img src="assets/images/{{ question.img }}">
-    </figure>
-    {% endif %}
+      {% endif %}
+
+      {% if question.rule_reminder %}
+        <p>Remember, good journalists share real life stories, like:</p>
+        <ul class="rules">
+          <li>A story of something you saw</li>
+          <li>A story of something that happened to you</li>
+          <li>A story that happened to someone you know</li>
+        </ul>
+      {% endif %}
+
     </section>
   </article>
   {% endfor %}

@@ -3,9 +3,10 @@
 <head>
   <META charset="utf-8">
   <META http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ META[0].quiz_title }} | The Texas Tribune</title>
+  <title>Alien Demo | Hackastory</title>
   <META name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <!-- build:css styles/main.min.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
@@ -13,27 +14,18 @@
 <body>
 
 <div id="graphic" class="graphic">
-  <header>
-    <h2 class="font-xl">{{ META[0].quiz_title }}</h2>
-    <span class="subhead">{{ META[0].quiz_intro_md }}</span>
-  </header>
+
 
 {% include "flowchart.html" %}
 {{ flowchart() }}
 
 </div>
-<footer class="footer">
-  hello
-  <ul>
-    {% if META[0].source %}<li>Source: {% if META[0].source_url %}<a href="{{ META[0]. source_url }}">{{ META[0].source }}</a>{% else %}{{ META[0].source }}{% endif %}</li>{% endif %}
-    {% if META[0].credit %}<li>Credit: {{ META[0].credit }}</li>{% endif %}
-  </ul>
-</footer>
+
+<footer></footer>
 
 
 <!-- build:js scripts/main.min.js -->
 <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="/node_modules/pym.js/dist/pym.js"></script>
 <script src="scripts/flowchart.js"></script>
 <!-- endbuild -->
 </body>

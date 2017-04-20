@@ -1,14 +1,19 @@
-/* global pym */
-
 (function() {
   'use strict';
-
-  var pymChild;
 
   function render() {
 
     $('#start').show();
     // Add your JS here!
+
+    $('.option--record').click(function() {
+      var $question = $(this).closest('article'),
+          video = $question.find('video'),
+          submit = $question.find('.option');
+
+      video.get(0).play();
+      submit.show();
+    });
 
     $('.option').click(function() {
       var question = $(this).closest('article');
@@ -16,9 +21,8 @@
 
       $(this).addClass('selected');
       $(question).find('.option').css('pointer-events', 'none').addClass('disable');
+      question.hide();
       $('#' + next).show();
-
-      pymChild.sendHeight();
 
     });
 
@@ -29,16 +33,7 @@
       $('#start').show();
     });
 
-    // if (pymChild) {
-    //   pymChild.sendHeight();
-    // }
   }
 
-  function load() {
-    pymChild = new pym.Child({
-      renderCallback: render
-    });
-  }
-
-  window.onload = load;
+  window.onload = render;
 })();

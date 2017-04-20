@@ -1,8 +1,15 @@
 $sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: Georgia, "Times New Roman", Times, serif;
+$cursive: 'Indie Flower', cursive;
+
+$blue: #1aa2cf;
+$pink: #fa459c;
+$orange: #fb9431;
+$yellow: #fde237;
+$purple: #9161a9;
 
 body {
-  font-family: $sans-serif;
+  font-family: $cursive;
   line-height: 1.4;
 }
 

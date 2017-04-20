@@ -2,6 +2,14 @@
   "Quiz": [
     {
       "id": "start",
+      "text_md": "<p>What do you want to do today?</p>\n",
+      "a_option_md": "<p>Tell a story</p>\n",
+      "b_option_md": "<p>Listen</p>\n",
+      "a_next": "story",
+      "b_next": "listen"
+    },
+    {
+      "id": "story",
       "text_md": "<p>What do you want to tell the world?</p>\n",
       "a_option_md": "<p>I know!</p>\n",
       "b_option_md": "<p>I’m not sure</p>\n",
@@ -10,43 +18,88 @@
     },
     {
       "id": "A1",
-      "text_md": "<p>Pellentesque ut neque.</p>\n",
-      "a_option_md": "<p>Yes</p>\n",
-      "b_option_md": "<p>No</p>\n",
+      "text_md": "<p>How do you want to tell your story?</p>\n",
+      "a_option_md": "<p>Video</p>\n",
+      "b_option_md": "<p>Drawing</p>\n",
       "a_next": "A2",
-      "b_next": "B2"
-    },
-    {
-      "id": "B1",
-      "text_md": "<p>Praesent egestas tristique nibh.</p>\n",
-      "a_option_md": "<p>Yes</p>\n",
-      "b_option_md": "<p>No</p>\n",
-      "a_next": "A3",
-      "b_next": "B3"
+      "b_next": "A3"
     },
     {
       "id": "A2",
-      "text_md": "<p>Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.</p>\n",
-      "a_option_md": "<p>Yes</p>\n",
-      "b_option_md": "<p>No</p>\n"
+      "text_md": "<p><i class=\"fa fa-video-camera\"></i> Record</p>\n",
+      "a_option_md": "<p>Share</p>\n",
+      "a_next": "followup",
+      "video": "//giphy.com/embed/2xvcjYCet7DJC?html5=true"
     },
     {
       "id": "A3",
-      "text_md": "<p>Ut leo.</p>\n",
-      "a_option_md": "<p>Yes</p>\n",
-      "b_option_md": "<p>No</p>\n"
+      "text_md": "<p>Draw your story</p>\n",
+      "a_option_md": "<p>Share</p>\n",
+      "a_next": "followup",
+      "image": "https://s-media-cache-ak0.pinimg.com/736x/94/3b/74/943b744115203e25b2c42c4fbc19c56d.jpg"
+    },
+    {
+      "id": "listen",
+      "text_md": "<p>Experience stories from children like you around the world.</p>\n",
+      "a_option_md": "<p>Manuel’s new baby sister</p>\n",
+      "b_option_md": "<p>Life with a new water well</p>\n",
+      "a_next": "B2",
+      "b_next": "B3"
     },
     {
       "id": "B2",
-      "text_md": "<p>Cras varius.</p>\n",
-      "a_option_md": "<p>Yes</p>\n",
-      "b_option_md": "<p>No</p>\n"
+      "text_md": "<p>Manuel’s new baby sister</p>\n",
+      "image": "../assets/sister.png"
     },
     {
       "id": "B3",
-      "text_md": "<p>Ut varius tincidunt libero.</p>\n",
+      "text_md": "<p>Life with a new water well</p>\n",
+      "image": "../assets/well.png"
+    },
+    {
+      "id": "followup",
+      "text_md": "<p>Did you share a true story with Piñalien?</p>\n",
       "a_option_md": "<p>Yes</p>\n",
-      "b_option_md": "<p>No</p>\n"
+      "rule_reminder": "Yes",
+      "a_next": "what"
+    },
+    {
+      "id": "what",
+      "text_md": "<p>What kind of story is yours?</p>\n",
+      "a_option_md": "<p>Next</p>\n",
+      "a_next": "when",
+      "video": "//giphy.com/embed/DYH297XiCS2Ck?html5=true"
+    },
+    {
+      "id": "when",
+      "text_md": "<p>When and where did your story take place?</p>\n",
+      "a_option_md": "<p>Next</p>\n",
+      "a_next": "who",
+      "video": "//giphy.com/embed/fMvvwdTWamlA4?html5=true"
+    },
+    {
+      "id": "who",
+      "text_md": "<p>Who was involved in this story?</p>\n",
+      "a_option_md": "<p>Next</p>\n",
+      "a_next": "why",
+      "video": "//giphy.com/embed/L7RNWv8TYz5DO?html5=true"
+    },
+    {
+      "id": "why",
+      "text_md": "<p>Why do you want to tell the world this story? </p>\n",
+      "a_option_md": "<p>Next</p>\n",
+      "a_next": "after_feeling"
+    },
+    {
+      "id": "after_feeling",
+      "text_md": "<p>How do you feel now?</p>\n",
+      "a_option_md": "<p>Next</p>\n",
+      "a_next": "done",
+      "video": "//giphy.com/embed/sTagKs58YUj1S?html5=true"
+    },
+    {
+      "id": "done",
+      "text_md": "<p>Thanks for sharing your story.</p>\n"
     }
   ]
 }
