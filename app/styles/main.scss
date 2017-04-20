@@ -1,0 +1,15 @@
+// @import 'bower_components/newsapps-styles/init-helpers';
+
+@import 'node_modules/newsapps-styles/initialize';
+@import 'base';
+@import 'flowchart';
+
+// Add your SCSS here!
+.footer {
+  @extend %font-s;
+  background-color: $white;
+  color: $text-gray;
+  font-family: $base-sans-serif;
+  text-align: left;
+}
+

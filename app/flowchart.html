@@ -1,0 +1,39 @@
+{% macro flowchart() %}
+
+<section class="flowchart">
+
+<!-- Question Template: Loops through each question in data.json -->
+
+  {% for question in Quiz %}
+  <article id="{{ question.id }}" class="flow-question">
+    <header>
+      {{ question.text_md }}
+    </header>
+    <section class="options">
+      {% if question.a_option_md %}
+      <label class="option" data-link="{{ question.a_next }}">
+        <button class="response"><i class="fa fa-circle-thin"></i><i class="fa fa-check-circle"></i></button>
+        {{ question.a_option_md }}
+      </label>
+      {% endif %}
+      {% if question.b_option_md %}
+      <label class="option" data-link="{{ question.b_next }}">
+        <button class="response"><i class="fa fa-circle-thin"></i><i class="fa fa-check-circle"></i></button>
+        {{ question.b_option_md }}
+      </label>
+    {% endif %}
+    {% if question.img %}
+    <figure class="image">
+      <img src="assets/images/{{ question.img }}">
+    </figure>
+    {% endif %}
+    </section>
+  </article>
+  {% endfor %}
+  <div class="reset">
+    <button id="reset" class="ghost-button">Start Over</button>
+  </div>
+
+</section>
+
+{% endmacro %}

@@ -1,0 +1,87 @@
+.flowchart {
+
+  .image {
+    text-align: center;
+
+    img {
+      max-width: 100px;
+    }
+  }
+
+  .option {
+    @include span-columns(6);
+    @include omega();
+    text-align: center;
+    margin: 0 auto;
+
+    button,
+    p {
+      display: inline-block;
+    }
+
+    p {
+      padding-right: .5em;
+      vertical-align: middle;
+    }
+  }
+
+  .options {
+    @include clearfix;
+  }
+
+  .option,
+  .option.disable:hover {
+    .fa-circle-thin {
+      display: block;
+    }
+
+    .fa-check-circle {
+      display: none;
+    }
+  }
+
+  .option:hover,
+  .selected,
+  .selected.disable:hover {
+    .fa-circle-thin {
+      display: none;
+    }
+
+    .fa-check-circle {
+      display: block;
+    }
+  }
+
+  .flow-question {
+    border-top: 1px solid $tribune-yellow;
+    display: none;
+    margin-bottom: 1.2em;
+
+    header p {
+      @extend %font-l;
+      font-family: $base-sans-serif;
+      font-weight: 300;
+      margin-top: 1em;
+      text-align: center;
+    }
+
+  }
+
+  .reset {
+    text-align: center;
+    margin-bottom: 1.2em;
+  }
+
+  .responses {
+    margin-bottom: 1em;
+  }
+
+  .response {
+    background-color: $white;
+    border: 0;
+    color: $tribune-teal;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+}
