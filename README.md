@@ -45,7 +45,7 @@ Flow charts are a little bit different than a regular quiz. You'll need to give 
 ### Quickstart
 
 1. Download the project folder or clone the repo.
-2. `npm install && bower install` and `npm install jquery`
+2. `npm install`
 3. Authorize your computer if this is your first time to ever use the kit: `npm run spreadsheet/authorize`
 4. Add your Google sheet's ID to the `config.json`, and override any sheets that need to be processed differently. (`keyvalue` or `objectlist`)
 5. Get to work!
@@ -90,5 +90,3 @@ Opens the project's spreadsheet in your browser.
 npm run deploy
 ```
 Deploys the project.
-
-
